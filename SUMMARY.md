@@ -5,4 +5,4 @@
   * [😀 useState : state 문법](page/usestate-state.md)
   * [😉 State 변경하는 방법](page/state.md)
   * [🤓 array/object state 변경하기](page/array-object-state.md)
-  * [Component 만들어 사용하기](page/component.md)
+  * [☺ Component 만들어 사용하기](page/component.md)
