@@ -115,7 +115,7 @@ function App() {
           글제목.map(function(a, i){
             return (
               <div className="list" key={i}>
-              <h4> {글제목[1]} <span onClick={()=>{ 
+              <h4> {글제목[i]} <span onClick={()=>{ 
                 let copy = [...따봉]
                 copy[i] = copy[i] + 1;
                 따봉변경(copy);
