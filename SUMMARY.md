@@ -9,3 +9,4 @@
   * [😊 02. Component 만들기](page/02.-component.md)
   * [😀 Map 반복문](page/map.md)
   * [🍀 Props](page/props.md)
+  * [🌳 Props 응용편](page/props-1.md)
