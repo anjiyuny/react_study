@@ -11,3 +11,4 @@
   * [🍀 Props](page/props.md)
   * [🌳 Props 응용편](page/props-1.md)
   * [🧚 01. Input 활용해보기](page/01.-input.md)
+  * [🧚 02. Input 활용해보기](page/02.-input.md)
