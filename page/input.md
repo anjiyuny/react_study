@@ -173,9 +173,9 @@ function App (){
             <h4>{ 글제목[i] }</h4>
             <p>2월 18일 발행</p>
             <button onClick={()=>{ 
-              let copy = [...글제목];
-              copy.splice(i, 1);
-              글제목변경(copy);
+              let copy = [...글제목];  //글제목 배열 사본만듬
+              copy.splice(i, 1);    // i번째 자료를 삭제해준다
+              글제목변경(copy);      // 삭제한자료로 state 변경해준다
            }}>삭제</button>
           </div> 
         )
@@ -185,4 +185,7 @@ function App (){
   )
 }
 ```
+
+1. 먼저 array 형태의 state 조작은 카피부터 하면 된다.
+2. <mark style="background-color:yellow;">**copy.splice(숫자, 1);**</mark>  <- 숫자 번째의 자료가 없어지는 문법!!
 
