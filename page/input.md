@@ -2,7 +2,7 @@
 description: input 태그 활용해 글 발행 기능 만들어보기
 ---
 
-# 🧚 01. Input 활용해보기
+# 🧚 Input 활용해보기
 
 
 
@@ -117,6 +117,71 @@ function App (){
         글제목변경(copy) // 위의 배열을 글제목배열에 추가
       }}>Enter</button>
    </div>
+  )
+}
+```
+
+이렇게 하면 문제는 상단에 글이 추가 되는것이 아니라 하단에 글이 추가 된다.
+
+
+
+#### ⬇️ 01 - 1 글 추가 기능
+
+```jsx
+function App (){
+
+  let [글제목, 글제목변경] = useState([
+    "남자 코트 추천",
+    "강남 우동 맛집",
+    "파이썬 독학",
+  ]);
+  let [입력값, 입력값변경] = useState(''); // 새 타이틀을 받아올 스트링타입의 state 생성
+  
+  return (
+   <div>
+      <input  onChange={(e)=>{
+        입력값변경(e.target.value); //사용자가 입력한 값을 배열로 state에 저장
+      }}/>
+      <button onClick={()=>{
+        let copy = [...글제목]; //글제목 배열을 복사해줌
+        copy.unshift(입력값);  // 입력한값을 복사한배열에 추가
+        글제목변경(copy);     // state 변경함수 이용
+      }}>Enter</button>
+   </div>
+  )
+}
+```
+
+1. array 형태의 state 조작은 카피부터 하면 된다.
+2. <mark style="background-color:yellow;">**arr.unshift ( '추가할자료' );**</mark>  <- 이것은 배열에 자료 추가하는 문법이다 알아놓자!
+3. 그리고 state 변경함수를 이용!
+
+
+
+#### ⬇️ 02 삭제 버튼 기능
+
+```jsx
+function App (){
+  let [글제목, 글제목변경] = useState(['남자코트추천', '강남우동맛집', '파이썬독학']);
+  let [입력값, 입력값변경] = useState('');
+  return ( 
+    <div>
+    { 
+     글제목.map(function(a, i){
+        return (
+          <div className="list">
+            <h4>{ 글제목[i] }</h4>
+            <p>2월 18일 발행</p>
+            <button onClick={()=>{ 
+              let copy = [...글제목];
+              copy.splice(i, 1);
+              글제목변경(copy);
+           }}>삭제</button>
+          </div> 
+        )
+     }) 
+    }  
+  </div>
   )
 }
 ```
