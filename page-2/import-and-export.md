@@ -25,6 +25,8 @@ export default a;
 
 #### ⬇️ **import 작명 from './파일경로'**&#x20;
 
+export했던 변수를 다른 파일로 사용할 수 있다.
+
 {% code title="App.js 파일" %}
 ```jsx
 import a from './data.js';
