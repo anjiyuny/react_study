@@ -13,7 +13,6 @@
   * [🧚 Input 활용해보기](page/input.md)
 * [Page 2](page-2/README.md)
   * [😄 import & export](page-2/import-and-export/README.md)
-    * [Page 1](page-2/import-and-export/page-1.md)
     * [☑ import\&export 연습](page-2/import-and-export/import-and-export.md)
     * [☑ 강의 정답 ver.](page-2/import-and-export/ver..md)
   * [Page 4](page-2/page-4.md)
