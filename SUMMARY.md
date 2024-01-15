@@ -16,3 +16,4 @@
     * [☑ import\&export 연습](page-2/import-and-export/import-and-export.md)
     * [☑ 강의 정답 ver.](page-2/import-and-export/ver..md)
   * [👩💻 리액트 : 라우터 설치하기](page-2/undefined.md)
+  * [👩💻 리액트 라우터 2](page-2/2.md)
